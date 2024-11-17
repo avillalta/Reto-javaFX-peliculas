@@ -81,4 +81,4 @@ insert into Copies (movie_id, user_id, status, format) values
     (22,1,'Bad','BluRay'),
     (13,2,'Excellent','DVD'),
     (3,3,'Bad','BluRay'),
-    (4,3,'Good','DVD')'
+    (4,3,'Good','DVD')

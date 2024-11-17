@@ -19,9 +19,9 @@ https://github.com/hibernate/dtd/blob/main/hibernate-configuration-3.0.dtd
         <property name="show_sql">true</property>
 
 
-        <mapping class="org.example.retoconjuntojavafx.models.Copies"/>
-        <mapping class="org.example.retoconjuntojavafx.models.Movies"/>
-        <mapping class="org.example.retoconjuntojavafx.models.User"/>
+        <mapping class="org.example.retopeliculasjavafx.models.Copy"/>
+        <mapping class="org.example.retopeliculasjavafx.models.Movie"/>
+        <mapping class="org.example.retopeliculasjavafx.models.User"/>
 
     </session-factory>
 </hibernate-configuration>
