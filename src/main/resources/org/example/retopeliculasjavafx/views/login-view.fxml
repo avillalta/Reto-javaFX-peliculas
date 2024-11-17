@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.retopeliculasjavafx.controllers.LoginController"
-            prefHeight="400.0" prefWidth="600.0">
+<VBox xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.retopeliculasjavafx.controllers.LoginController">
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #26262C;">
+            <!-- Left side: Image -->
+            <left>
+                <AnchorPane prefWidth="228.0" style="-fx-background-color: #26262C;">
+                    <children>
+                        <ImageView fitHeight="400.0" fitWidth="228.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../media/login/fondo-login.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </left>
 
-</AnchorPane>
+            <!-- Right side: Login Form -->
+            <right>
+                <AnchorPane style="-fx-background-color: #26262C;" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+                    <children>
+                        <Label fx:id="lblLogin" text="Login" textFill="#e8dcdc" style="-fx-font-size: 24px; -fx-font-weight: bold;">
+                            <AnchorPane.topAnchor>50.0</AnchorPane.topAnchor>
+                            <AnchorPane.leftAnchor>50.0</AnchorPane.leftAnchor>
+                        </Label>
+                        <Label fx:id="lblUserName" text="UserName" textFill="#ebe4e4" style="-fx-font-size: 14px;">
+                            <AnchorPane.leftAnchor>50.0</AnchorPane.leftAnchor>
+                            <AnchorPane.topAnchor>120.0</AnchorPane.topAnchor>
+                        </Label>
+                        <TextField fx:id="txtUserName" style="-fx-background-color: #000000; -fx-text-fill: white;" prefHeight="26.0">
+                            <AnchorPane.leftAnchor>50.0</AnchorPane.leftAnchor>
+                            <AnchorPane.topAnchor>150.0</AnchorPane.topAnchor>
+                            <AnchorPane.rightAnchor>50.0</AnchorPane.rightAnchor>
+                        </TextField>
+                        <Label fx:id="lblPassword" text="Password" textFill="#ddd5d5" style="-fx-font-size: 14px;">
+                            <AnchorPane.leftAnchor>50.0</AnchorPane.leftAnchor>
+                            <AnchorPane.topAnchor>200.0</AnchorPane.topAnchor>
+                        </Label>
+                        <PasswordField fx:id="txtPassword" style="-fx-background-color: #000000; -fx-text-fill: white;" prefHeight="26.0">
+                            <AnchorPane.leftAnchor>50.0</AnchorPane.leftAnchor>
+                            <AnchorPane.topAnchor>230.0</AnchorPane.topAnchor>
+                            <AnchorPane.rightAnchor>50.0</AnchorPane.rightAnchor>
+                        </PasswordField>
+                        <Button fx:id="btnLogin" text="LOGIN" style="-fx-background-color: #02FFA1;" onAction="#loginApp" prefHeight="27.0">
+                            <AnchorPane.leftAnchor>50.0</AnchorPane.leftAnchor>
+                            <AnchorPane.topAnchor>290.0</AnchorPane.topAnchor>
+                            <AnchorPane.rightAnchor>50.0</AnchorPane.rightAnchor>
+                        </Button>
+                        <Button fx:id="btnExit" text="EXIT" style="-fx-background-color: NONE; -fx-border-color: #F51414; -fx-border-radius: 5PX;" onAction="#closeApp" textFill="#f51414" prefHeight="28.0">
+                            <AnchorPane.topAnchor>20.0</AnchorPane.topAnchor>
+                            <AnchorPane.rightAnchor>20.0</AnchorPane.rightAnchor>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </right>
+        </BorderPane>
+    </children>
+</VBox>
